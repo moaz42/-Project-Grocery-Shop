@@ -1,0 +1,37 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: rgb(168, 230, 235);
+}
+
+body .content {
+    display: flex;
+}
+
+body .content>div {
+    padding: 10px;
+}
+
+body .content .dashboard {
+    background-color: #313131;
+    width: 20%;
+    font-size: 24px;
+    color: rgb(255, 255, 255);
+}
+
+body .content .dashboard a {
+    color: #F5F5F5;
+    font-family: 'Comforter Brush', cursive;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+body .content .dashboard a:hover {
+    color: rgba(173, 248, 2);
+}
+
+.tbl {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+    background-color: #04AA6D;
+    color: white;
+}

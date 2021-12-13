@@ -18,3 +18,11 @@
 </body>
 
 </html>
+<h2>Make ORDER</h2>
+<form action="" method="post">
+Item ID: 
+<input type="text" name="id" id=""> <br>
+Quantity
+<input type="text" name="" id=""> <br>
+<button type="submit">Make Order</button>
+</form>

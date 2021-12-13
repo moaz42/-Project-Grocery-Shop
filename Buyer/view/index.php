@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../controller/style.css">
-    <title>Doctor</title>
+    <title>Home</title>
 </head>
 <body>
     <?php include 'navbar.php'?>
@@ -16,14 +16,13 @@
         ?>
     </div>
     <div class="main" style="padding:25px;">
-    <div class="div1">    <a href="buyer.php">Show all Buyer</a> <br> <br>
+    <div class="div1">    <br> <br>
     <a href="seller.php">show all sellers</a> <br> <br>
-    <a href="deliveryman.php">show alla deliveryman</a> <br> <br>
-    <a href="alluser.php">Show All</a></div><br><br>
+    <a href="deliveryman.php">show all deliveryman</a> <br> <br>
     <a href="items.php">Show Inventory</a></div><br><br>
     <div class="div2">
-        <h2>Admins</h2>
-        <?php include '../model/profile.php'; showalladmin();?></div>
+        <h2>Items</h2>
+        <?php include '../model/profile.php'; showallitem();?></div>
 
     
 </div>

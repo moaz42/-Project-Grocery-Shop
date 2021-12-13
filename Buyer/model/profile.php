@@ -237,8 +237,8 @@ function showallitem()
                 echo"<tr>";
                 echo "<td style='padding:10px;border: 1px solid black;border-collapse: collapse; width: 100%;padding:10px;'>".$row["ID"]."</td>";
                 echo "<td style='padding:10px;border: 1px solid black;border-collapse: collapse; width: 100%;padding:10px;'>".$row["name"]."</td>";
-                echo "<td style='padding:10px;border: 1px solid black;border-collapse: collapse; width: 100%;padding:10px;'".$row["price"]."</td>";
-                echo "<td style='padding:10px;border: 1px solid black;border-collapse: collapse; width: 100%;padding:10px;'".$row["quantity"]."</td>";
+                echo "<td style='padding:10px;border: 1px solid black;border-collapse: collapse; width: 100%;padding:10px;'>".$row["price"]."</td>";
+                echo "<td style='padding:10px;border: 1px solid black;border-collapse: collapse; width: 100%;padding:10px;'>".$row["quantity"]."</td>";
             }
             echo "</table>";
         } 

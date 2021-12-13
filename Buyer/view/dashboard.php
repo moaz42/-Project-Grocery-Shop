@@ -13,6 +13,9 @@
     <ul>
         <li><a href="search.php">Search</a></li>
     </ul>
+    <ul>
+        <li><a href="makeorder.php">Make Order</a></li>
+    </ul>
     <ul> 
         <li><a href="logout.php">Log Out</a></li>
     </ul>

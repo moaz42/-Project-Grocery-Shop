@@ -4,14 +4,14 @@ session_start();
     $itemID=$name=$oderq="";
     $name=$_SESSION["lname"];
     if($_POST["ID"]!=""){
-            $ID=test_input($_POST["ID"]);
+            $itemID=test_input($_POST["ID"]);
     }
     else{
         echo "No value insulted";
         echo $email,$password,$name,$phone,$area,$city,$state;
     }
-    if($_POST["oderq"]!=""){
-            $oderq=test_input($_POST["oderq"]);
+    if($_POST["quantity"]!=""){
+            $oderq=test_input($_POST["quantity"]);
     }
     else{
         echo "No value insulted";
@@ -19,7 +19,7 @@ session_start();
     if($flag==1)
     {
         echo$passworderr."<br>";
-        header("Refresh: 3; url=../view/editProfile.php");
+        //header("Refresh: 0; url=../view/editProfile.php");
     }
 
     else{
@@ -33,21 +33,15 @@ session_start();
                     if ($conn->connect_error) {
                     die("Connection failed: " . $conn->connect_error);
                     }
-
-                    $sql = "INSERT INTO order (itemID, buyerName, orderq)
-                    VALUES ('$itemID', '$name', ' $oderq')";
-
+                    $sql = "INSERT INTO order (itemID,buyerName,orderq)
+                    VALUES ('$itemID', '$name', '$oderq')";
                     if ($conn->query($sql) === TRUE) {
                     echo "New record created successfully";
                     } else {
                     echo "Error: " . $sql . "<br>" . $conn->error;
                     }
                     $conn->close();
-            }
-            else{
-                echo "no update";
-                header("Refresh: 3; url=../view/editProfile.php");
-            }
+                }
     }
     function test_input($data) {
     $data = trim($data);

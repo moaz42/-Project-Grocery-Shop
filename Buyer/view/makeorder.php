@@ -15,7 +15,7 @@
         <?php include '../model/profile.php'; showallitem();?>
         <form action="../controller/makeorder.php" method="post">
             Item id: 
-            <input type="text" name="id" id="id">
+            <input type="text" name="ID" id="id">
             Item quantity: 
             <input type="text" name="quantity" id="quantity">
             <button type="submit">Make Order</button>
